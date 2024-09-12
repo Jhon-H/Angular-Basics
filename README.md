@@ -17,54 +17,19 @@ Un single page application es un tio de aplicación web que carga todo el conten
 
 ## Roadmap
 
-- Componentes
-- Binding
-- Directivas
-- Pipes
-- Decorators
-- Life cycle
-- Optimizaciones y ChangeDetection
-- Forms
-- Services + Injection dependency
-- Routing + Lazy load, defererable, etc
-- Http interceptors
-- Render2, JIT AOT
-- SEO
-- Animaciones + View transitions
-- Signals
-
-- RXJS
-- Ngrx
-- LIFT, SOLID, YAGNI, DRY, Boy Scout y otros principios y buenas practicas, Smart dumb componentes
-- Deployment
-- Security
-
-** challenges
-** articulo
-** TPP
-** proyecto rxjs, animaciones y otro
-** angular avanzado
-** proyecto angular completo
-** articulo
-** monorepos + proyecto
-** video o articulo
-** MF + proyectos x3 + libros
-
-## Avanzado
-
-- SSR, SSG e Hidratación
-- Deploy de SSR
-- Crear y usar librerias
-- Optimizacion, profiling y monitoreo
-- E2E y testing, y conocer otros tipos de pruebas, coverage
-- Schematics custom
-- Accesibilidad
-- I18N
-- Seguridad avanzada practica
-- Image optimization
-- Modales y componentes complejos
-- Auth avanzado (autH0, cognito, JWT, Recaptcha, ejemplos en banca, MFA, monitorización)
-- Estado avanzado, entidades
-- Documentación (diagramas de estado, readme avanzado, design docs, cycle software, flow charts, Integration docs, ui style guide, test plans, test cases, deployment guide, environment setup)
-- Terceros: Maps, Mercado Pago, contenful, firebase, auth0, cognito, algolia, Pusher, Sentry, Face auth, CDK, storybook, compodoc, google pay button, party town, web workers, socket.dev, Youtube, analitycs
-- Librerias: qr codes, camera, charts, modals, dnd, first steps.
+- [Componentes](./src/app/components/README.md)
+- [Binding](./src/app/binding/README.md)
+- [Directivas](./src/app/directives/README.md)
+- [Pipes](./src/app/pipes/README.md)
+- [Decorators](./src/app/decorators/README.md)
+- [Life cycle](./src/app/life-cycle-hooks/README.md)
+- [ChangeDetection](./src/app/ChangeDetection/README.md)
+- [Formularios](./src/app/Forms/README.md)
+- [Services + Injection dependency](./src/app/services-and-injections/README.md)
+- [Routing + Lazy load, defererable](./src/app/routing-advanced%20+%20lazy/README.md)
+- [Http interceptors](./src/app/http/README.md)
+- [Render2, JIT AOT](./src/app/render2-jit-aot/)
+- [SEO](./src/app/seo/README.md)
+- [Animaciones + View transitions](./src/app/animaciones/README.md)
+- [Signals](./src/app/signals/README.md)
+- [RXJS](./src/app/rxjs/README.md)
