@@ -1,0 +1,74 @@
+<main>
+  <h1>Registrate</h1>
+
+  <form [formGroup]="form" class="form" (ngSubmit)="onSubmit()">
+    <label class="item">
+      Ingresa tu nombre y apellido
+      <input type="text" placeholder="Jhon Hernandez" formControlName="name" />
+    </label>
+
+    <span appHasError [form]="form" field="name"></span>
+
+    <label class="item">
+      Ingresa tu email
+      <input type="email" placeholder="email@xxx.com" formControlName="email" />
+    </label>
+
+    <label class="item">
+      Ingresa tu telefono
+      <input type="tel" placeholder="xxx xxx xxxx" formControlName="phone" />
+    </label>
+
+    <label class="item">
+      Ingresa tu país
+      <select formControlName="country">
+        <option disabled>Selecciona un país</option>
+        @for(country of countries; track country) {
+          <option [value]="country">{{ country }}</option>
+        }
+      </select>
+    </label>
+
+    <label class="item">
+      Selecciona una ciudad
+      <select [disabled]="!!country" formControlName="city">
+        <option>Selecciona una ciudad</option>
+        @if(!!country) {
+          @for(city of cities[country]; track city) {
+            <option [value]="city">{{ city }}</option>
+          }
+        }
+      </select>
+    </label>
+
+    <label class="item">
+      Ingresa una contraseña nueva
+      <input type="password" placeholder="********" formControlName="password" />
+    </label>
+
+    <label class="item">
+      Confirma tu contraseña
+      <input type="password" placeholder="********" formControlName="confirmPassword" />
+    </label>
+
+    <fieldset class="item">
+      <legend>Selecciona tus intereses</legend>
+
+      @for(preference of preferences; track preference) {
+        <label>
+          <input type="checkbox" name="inter" [value]="preference" />
+          {{ preference }}
+        </label>
+      }
+    </fieldset>
+
+    <fieldset class="item">
+      <legend>Acepta los terminos y condiciones</legend>
+
+      <label> <input type="radio" /> Acepta el tratamiento de datos </label>
+      <label> <input type="radio" /> Acepta la politica de privacidad </label>
+    </fieldset>
+
+    <button>Enviar</button>
+  </form>
+</main>
